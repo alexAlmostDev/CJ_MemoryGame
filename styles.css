@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-color: rgb(48, 48, 48);
+  color: white;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+
+  background-color: rgb(172, 170, 250);
+}
+
+.header_left {
+  margin-bottom: 3px;
+}
+
+header span {
+  color: red;
+  font-size: 1.8em;
+  margin-bottom: 11px;
+}
+
+.buttons {
+  align-items: center;
+}
+
+header button,
+span {
+  margin: 5px;
+}
+
+header button {
+  padding: 5px 10px;
+
+  font-size: 14px;
+
+  background: rgb(234, 240, 237);
+  border: 1px solid rgba(0, 0, 0, 0.418);
+  border-radius: 5px;
+
+  cursor: pointer;
+}
+
+header button:hover {
+  background: rgb(107, 180, 140);
+}
+
+.header_right {
+  display: flex;
+  align-items: center;
+
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.icon {
+  margin: 0 8px;
+}
+
+.restartButton:hover {
+  color: rgb(253, 100, 100);
+}
+
+.soundOn {
+  color: white;
+}
+
+.soundOff {
+  color: red;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+
+  gap: 10px;
+  padding: 20px;
+
+  max-width: 1300px;
+}
+
+.card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.card_inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.card_flip .card_inner {
+  transform: rotateY(180deg);
+}
+
+.card_front,
+.card_back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.card_front {
+  background-color: rgb(172, 170, 250);
+  color: black;
+}
+
+.card_front:hover {
+  background-color: rgb(98, 97, 138);
+}
+
+.card_front img {
+  height: 100%;
+}
+
+.card_back {
+  font-size: 5em;
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 100%;
+  height: 200px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  opacity: 0.9;
+  background-color: #131313;
+  color: white;
+}
+
+.message {
+  font-size: 5em;
+}
+.points {
+  font-size: 2em;
+}
+
+.hide {
+  display: none;
+}

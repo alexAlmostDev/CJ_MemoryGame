@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Game</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header_left">
+        <span class="timer_span hide"></span>
+        <div class="buttons">
+          <button class="start_button">Start</button>
+          <button class="difficulty_button" title="Difficulty">Easy</button>
+        </div>
+      </div>
+
+      <div class="header_right">
+        <div class="soundButton soundOn icon" title="Mute">
+          <i class="fa-solid fa-volume-high"></i>
+        </div>
+        <div class="soundButton soundOff icon hide" title="Unmute">
+          <i class="fa-solid fa-volume-xmark"></i>
+        </div>
+        <div class="restartButton icon" title="Restart">
+          <i class="fa-solid fa-fire-extinguisher"></i>
+        </div>
+      </div>
+    </header>
+    <main class="hide"></main>
+    <div class="overlay hide">
+      <span class="message"> 🎉 You won! </span>
+      <span class="points">0</span>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
