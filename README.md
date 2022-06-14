@@ -1,6 +1,6 @@
 # Memory game with cards
 
-Inspired by Coding Garden video, I thought it was a fun project and this is my first time ever making any sort of game.
+Inspired by Coding Garden video, this was a fun exercise and my first time ever making any sort of game.
 <br>
 I gotta say, besides my usual fight with CSS, figuring out the logic in the javascript also took me some time.
 <br><br>
